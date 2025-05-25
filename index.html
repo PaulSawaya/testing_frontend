@@ -13,7 +13,7 @@
 
 <script>
 function load_names(){
-    fetch("https://paulsawaya.github.io/testing_frontend/names").then(response => response.json()).then(data => {
+    fetch("https://testing-cors-vuew.onrender.com/names").then(response => response.json()).then(data => {
         console.log("i am here")
         out = document.getElementById("output")
         out.textContent = JSON.stringify(data,null)
