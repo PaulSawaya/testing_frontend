@@ -7,12 +7,13 @@
 </head>
 <body>
     
-<button onclick="load_names()">Load Names</button>
+<h1>PRESS THE BUTTON</h1>
+<button onclick="load_names()">Load User</button>
 <p id="output"></p>
 
 <script>
 function load_names(){
-    fetch("http://localhost:1234/names").then(response => response.json()).then(data => {
+    fetch("https://paulsawaya.github.io/testing_frontend/").then(response => response.json()).then(data => {
         console.log("i am here")
         out = document.getElementById("output")
         out.textContent = JSON.stringify(data,null)
